@@ -1,0 +1,39 @@
+.edit-section {
+  padding: 20px;
+}
+
+.hero-images-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.hero-image-row {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.checkbox {
+  margin-right: 10px;
+}
+
+.hero-image-content {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.hero-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.hero-image-details {
+  display: flex;
+  flex-direction: column;
+}

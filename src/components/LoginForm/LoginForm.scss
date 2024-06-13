@@ -1,12 +1,18 @@
 .login {
   width: 100%;
+  
+  h2 {
+    font-size: 3rem;
+  }
 
   #loginForm {
+    font-size: 1.5rem;
     margin: auto;
-    width: max(60%, 16rem);
+    max-width: 30rem;
+    min-width: 300px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
   }
 
