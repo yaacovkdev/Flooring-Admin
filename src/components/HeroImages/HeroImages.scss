@@ -22,13 +22,15 @@
 
 .hero-image-content {
   display: flex;
+  justify-content: space-between;
+  width: 100%;
   align-items: center;
   gap: 10px;
 }
 
 .hero-image {
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: auto;
   object-fit: cover;
   border-radius: 5px;
 }
@@ -36,4 +38,10 @@
 .hero-image-details {
   display: flex;
   flex-direction: column;
+  width: 40rem;
+  input {
+    min-width: 150px;
+    
+    width: calc(100% - 12rem);
+  }
 }
