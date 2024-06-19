@@ -1,0 +1,49 @@
+@use "/src/styles/variables" as *;
+
+$shadow-drop: 0.2rem;
+
+.default-button {
+  position: relative;
+  margin: 10px;
+  width: 7.5rem;
+  height: 2.5rem;
+  color: white;
+  cursor: pointer;
+
+  &:hover {
+    button {
+      top: $shadow-drop;
+      background-color: $dashboard-darkred;
+    }
+
+    .default-shadow {
+      visibility: hidden;
+    }
+  } 
+
+  > * {
+    position: absolute;
+    right: 0;
+    max-width: 20rem;
+    border-radius: 1rem;
+  }
+
+  .default-shadow {
+    width: 99%;
+    height: 99%;
+    z-index: -1;
+    top: $shadow-drop;
+    background-color: black;
+  }
+  button {
+    border: none;
+    width: 100%;
+    height: 100%;
+
+    color: white;
+    cursor: pointer;
+    background-color: $dashboard-lightred;
+    font-size: 0.9em;
+    font-weight: 500;
+  }
+}

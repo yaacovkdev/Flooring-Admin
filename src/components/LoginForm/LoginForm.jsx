@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import { sha256 } from "js-sha256";
 import { Base64 } from "js-base64";
+import Button from "../Button/Button";
 
 axios.defaults.withCredentials = true;
 
@@ -83,7 +84,7 @@ const LoginForm = ( {setLoggedIn} ) => {
             required
           />
         </div>
-        <button type="submit">Login</button>
+        <Button text={"Login"}/>
       </form>
     </div>
   );
